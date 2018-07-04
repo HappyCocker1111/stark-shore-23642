@@ -1,0 +1,227 @@
+@charset "UTF-8";
+html, body{
+    height: 100%;
+}
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    color:#FFF;
+   }
+.welcome_wap{
+    width: 100%;
+    background: url(../img/welcome.jpg) no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+}
+.message_wap{
+    width: 80%;
+    margin: 0 auto;
+}
+.message{
+    font-size: 30px;
+    font-weight: bold;
+}
+.letterDrop {
+    position: relative;
+    top: 0;  
+    display: inline-block;
+    text-transform: uppercase; 
+    letter-spacing: 0.5em;
+    opacity: 0.8;
+    transform: rotateX(-90deg);
+    animation: letterDrop 1.2s ease 1 normal forwards;
+  }
+  
+  @keyframes letterDrop {
+      10% {
+          opacity: 0.5;
+      }
+      20% {
+          opacity: 0.8;
+          top: 3.75em;
+          transform: rotateX(-360deg);
+      }
+      100% {
+          opacity: 1;
+          top: 4.50em;
+          transform: rotateX(360deg);
+      }
+  }
+.cp_btn_wap{
+    width: 80%;
+    margin-top: 25%;
+}
+a.cp_btn {
+    position: relative;
+    display: block;
+    width: 160px;
+    padding: 0.8em;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: #2196F3;
+    border:solid 1px #fff;
+    overflow: hidden;
+    margin: 0;
+    float: right;
+    }
+    a.cp_btn:before {
+    content:"";
+    position: absolute;
+    top: -25px;
+    left: -20px;
+    height:90px;
+    width:20px;
+    background : #fff;
+    opacity: 0.3;
+    transform: rotate(40deg);
+    transition: 0.3s;
+    }
+    a.cp_btn:hover:before {
+    left:98%;
+    }
+   .another{
+       width: 100%;
+       position: absolute;
+       z-index: 1;
+   }
+   @media screen and (min-width: 500px) {
+    .another{height: 30px;}
+  }
+  @media screen and (max-width: 500px) {
+    .another{
+        height: auto;
+        margin: -160% 0 0 -5%;
+    }
+  }
+   a{
+    color:#f6f0e3;
+    text-decoration:none;
+   }
+   .wrap{
+    width:115px;
+    margin: 18% auto 0 auto;
+
+   }
+   .rhombus{
+    border-radius: 50%;
+    width:150px;
+    height:150px;
+    background:#d5c2f4;
+    float:left;
+   }
+   .rhombus:hover{
+    background:    #bea4f2;
+   }
+   .rhombus p{
+    text-align:center;
+    padding-top: 60px; 
+   }
+    @media screen and (max-width: 500px) {
+     .wrap{
+         margin-top: -25%;
+         margin-left: 35%;
+   }
+     .rhombus{
+       float:none;
+       margin:40px 20px;
+     }
+   }
+.column {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+}
+.info {
+    position: absolute;
+    margin-top: -50%;
+    width: 50%;
+}
+.info ul{
+    width: 100%;
+    padding: 0;
+    z-index: 2;
+    position: relative;
+}
+.info ul li{
+    list-style: none;
+    background-color: #7e7b7b9e;
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.info ul li:first-child, .info ul li:nth-child(2){border-bottom: solid 1px white}
+ul.left_ul li{float: right;}
+ul.left_ul li:first-child{width: 100%;}
+ul.left_ul li:nth-child(2){width: 80%;}
+ul.left_ul li:nth-child(3){width: 50%;}
+
+ul.right_ul li:first-child{width: 100%;}
+ul.right_ul li:nth-child(2){width: 80%;}
+ul.right_ul li:nth-child(3){width: 50%;}
+
+.modal_ol{
+    width: 40%;
+    margin: 20px auto;
+}
+.modal_ol li{
+    color: rgb(25, 0, 255);
+    display: inline;
+    padding: 0 10px 5px 0;
+}
+h2{
+    color: rgb(25, 0, 255);
+    width: 100%;
+    text-align: center;
+}
+
+.content1 {
+    background: url(../img/back.jpg) no-repeat top center;
+    background-size: cover;
+    color: rgba(255,255,255,.7);
+    position: relative;
+    z-index: 0;
+}
+.content2 {
+    background: url(../img/front.png) no-repeat top center;
+    background-size: cover;
+    color: rgba(0,0,0,.7);
+    position: relative;
+    z-index: 0;
+}
+.content1::before, .content2::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background: inherit;
+    filter: blur(5px); 
+}
+.work_content_wap p{color: black;}
+.work_content_wap {margin-bottom: 45px;}
+.naiyou .kankyou{padding-bottom: 15px;}
+.naiyou p:first-child, .kankyou p:first-child, .yakuwari  p:first-child
+{font-weight: bold;}
+.naiyou, .kankyou {margin-bottom: 10px;}
+
+
+
+
+
+
+
+
+@media all and (min-width: 500px) {
+  .wrapper {
+    display: flex;
+  }
+}
+
